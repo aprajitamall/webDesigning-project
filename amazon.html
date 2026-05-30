@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Project</title>
+
+<link rel="stylesheet" href="amazon.css">
+
+</head>
+
+<body>
+
+
+
+<div class="header">
+
+    <img class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+
+    <div class="location">
+        📍 Delivering to Delhi 400001
+    </div>
+
+    <div class="searchbar">
+
+        <select>
+            <option>All</option>
+            <option>Mobiles</option>
+            <option>Fashion</option>
+            <option>Electronics</option>
+            <option>Books</option>
+        </select>
+
+        <input type="text"
+            id="searchInput"
+            placeholder="Search Amazon.in">
+
+        <button onclick="searchProducts()">🔍</button>
+
+    </div>
+
+    <div class="right">
+
+        <button class="darkbtn"
+            onclick="darkMode()">
+            Dark Mode
+        </button>
+
+        <div class="cart">
+            🛒
+            <span id="cartCount">0</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="navbar">
+
+    <p>All</p>
+    <p>Today's Deals</p>
+    <p>Best Sellers</p>
+    <p>Mobiles</p>
+    <p>Electronics</p>
+    <p>Fashion</p>
+    <p>Prime</p>
+    <p>Home</p>
+    <p>Kitchen</p>
+    <p>Books</p>
+    <p>Gaming</p>
+
+</div>
+
+
+
+<div class="slider">
+
+    <img id="sliderImage"
+        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1600">
+
+</div>
+
+
+<div class="offer-banner">
+
+    <h1>Big Summer Sale</h1>
+
+    <h2>Up to 70% OFF on Electronics & Fashion</h2>
+
+    <p>Limited Time Offer</p>
+
+</div>
+
+
+
+<h1 class="section-title">Top Deals For You</h1>
+
+<div class="products" id="productContainer">
+
+   
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+        <div class="card-content">
+            <div class="offer">40% OFF</div>
+            <h2>Nike Running Shoes</h2>
+            <p class="rating">★★★★☆</p>
+            <p class="price">₹2,999 <span class="oldprice">₹5,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div> 
+       <div class="card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+        <div class="card-content">
+            <div class="offer">55% OFF</div>
+            <h2>Wireless Headphones</h2>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹1,499 <span class="oldprice">₹3,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500">
+        <div class="card-content">
+            <div class="offer">20% OFF</div>
+            <h2>Gaming Laptop</h2>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹54,999 <span class="oldprice">₹69,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500">
+        <div class="card-content">
+            <div class="offer">30% OFF</div>
+            <h2>Men T-Shirt</h2>
+            <p class="rating">★★★★☆</p>
+            <p class="price">₹799 <span class="oldprice">₹1,299</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+        <div class="card-content">
+            <div class="offer">50% OFF</div>
+            <h2>Smart Watch</h2>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹2,199 <span class="oldprice">₹4,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500">
+        <div class="card-content">
+            <div class="offer">35% OFF</div>
+            <h2>Luxury Perfume</h2>
+            <p class="rating">★★★★☆</p>
+            <p class="price">₹999 <span class="oldprice">₹1,899</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+        <div class="card-content">
+            <div class="offer">60% OFF</div>
+            <h2>Women Fashion</h2>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹1,299 <span class="oldprice">₹3,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600">
+        <div class="card-content">
+            <div class="offer">25% OFF</div>
+            <h2>Apple MacBook</h2>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹89,999 <span class="oldprice">₹1,09,999</span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+
+<h1 class="section-title">Why Shop With Us?</h1>
+
+<div class="services">
+
+    <div class="service-box">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Get products delivered within 24 hours.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>🔒 Secure Payment</h3>
+        <p>100% secure online payment system.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>💰 Best Prices</h3>
+        <p>Best deals and offers every day.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>📞 24/7 Support</h3>
+        <p>Customer support anytime.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-top">
+        <div>
+            <h3>Get to Know Us</h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+        <div>
+            <h3>Connect With Us</h3>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Amazon Clone | Designed with HTML CSS JavaScript</p>
+    </div>
+</div>
+
+<script src="amazon.js"></script>
+
+</body>
+</html>
+
